@@ -1,10 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
+import VueGlide from 'vue-glide-js'
+import 'vue-glide-js/dist/vue-glide.css'
 import './registerServiceWorker'
 import router from './router'
 import store from './store'
 
 Vue.config.productionTip = false
+Vue.use(VueGlide);
 
 new Vue({
   router,
